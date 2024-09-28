@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+header .logo span {
+    font-weight: bold;
+}
+
+header .contact-info p {
+    margin-bottom: 5px;
+}
+
+header .cta a {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('decades.png');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: white;
+}
+.card:hover{
+    box-shadow: 0 15px 30px rgb(8, 8, 8);
+    transform: translateY(-20px);
+    background-color: white;
+    color: orange;
+}
+/* .card-img-top{
+    background-color: white;
+}
+.card-img-top:hover{
+    background-color:white;
+} */
+
+/* .practice-areas {
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+} */
+
+.practicebox {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.practice-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.practicebox button{
+    background-color:orange;
+    color: #f5f5f5;
+    font-weight:bolder;
+    display: block;
+    margin: auto;
+}
+
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.slider-container {
+    position: relative;
+    max-width: 800px; /* Adjust as necessary for more horizontal space */
+    margin: auto; /* Center the slider */
+}
+
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide overflow */
+}
+
+.slide {
+    display: none; /* Hide all slides */
+    text-align: center; /* Center the text */
+}
+
+input#slide1:checked ~ .slides .slide:nth-child(1),
+input#slide2:checked ~ .slides .slide:nth-child(2) {
+    display: block; /* Show the selected slide */
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    padding: 0 20px; /* Increase padding around arrows for click area */
+}
+.text-display {
+    padding: 0 80px; /* Increase horizontal padding to expand text display */
+}
+
+
+
+/* .contactphoto{
+    padding: 0px 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.formright {
+    padding: 0px 0px;
+    background-color: white;
+    text-align: center;
+    margin-left:50%;
+} */
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adds some space between the image and the form */
+}
+
+.contactphoto{
+    padding: 0px 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    flex:1;
+}
+.formright {
+    padding: 0px 0px;
+    background-color: white;
+    text-align: center;
+    flex: 1;
+}
+
+
+.team {
+    margin-left: 5%;
+    padding: 50px 50px;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+.team button{
+    background-color:orange;
+    color: #f5f5f5;
+    font-weight:bolder;
+    display: block;
+    margin: auto;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adds some space between the image and the form */
+}
+.contact-info{
+    padding: 0px 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    flex:1;
+}
+.subscribe {
+    padding: 0px 0px;
+    background-color: white;
+    flex: 1;
+}
